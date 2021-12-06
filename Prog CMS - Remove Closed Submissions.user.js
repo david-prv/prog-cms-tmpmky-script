@@ -10,6 +10,8 @@
 // ==/UserScript==
 
 (function() {
+    "use strict";
+    
     let nodes = document.getElementsByClassName("table-submissions")[0].childNodes[1].childNodes;
     let cleanNodes = [];
     Array.prototype.forEach.call(nodes, function(node) {
