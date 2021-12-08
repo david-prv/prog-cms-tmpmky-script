@@ -12,9 +12,12 @@
 (function() {
     'use strict';
 
+    /* Add some global styles */
     let body = document.body;
     body.setAttribute("style", "background-color:#0d1117!important;color:#c9d1d9!important;padding-top:2%;");
     body.innerHTML += "<style>table.table-surrounded tr td:first-child, table.table-surrounded tr th:first-child {border-left:none!important;} .bs-docs-sidenav > li > a {border: none!important;} .nav-list>li>a, .nav-list .nav-header {text-shadow:none!important;} .table th, .table td {border-top:1px solid black!important;} .table-bordered {border:none!important;}</style>"
+    
+    /* Add style to certain table rows */
     let tables = document.getElementsByClassName("table table-striped");
     Array.prototype.forEach.call(tables, function(table) {
         let tbody = table.childNodes[0];
@@ -32,6 +35,8 @@
             }
         };
     });
+    
+    /* Add style to spy  */
     let spy = document.getElementById("scrollspy");
-    spy.setAttribute("style", "background-color:transparent!important;")
+    if(spy) spy.setAttribute("style", "background-color:transparent!important;")
 })();
