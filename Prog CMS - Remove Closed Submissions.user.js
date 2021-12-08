@@ -10,7 +10,7 @@
 // ==/UserScript==
 
 (function() {
-    "use strict";
+    'use strict';
     
     let nodes = document.getElementsByClassName("table-submissions")[0].childNodes[1].childNodes;
     let cleanNodes = [];
