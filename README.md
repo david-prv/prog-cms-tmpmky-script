@@ -14,6 +14,8 @@ little collection of tampermonkey plugins I've programmed for the prog1 cms
 9. Press install
 10. You're done
 
-## Demonstration
-
+## Demonstrations
+### Beautify Prog CMS
 ![](https://david-dewes.de/img/demoA.gif)
+### DarkMode for Prog CMS
+soon
