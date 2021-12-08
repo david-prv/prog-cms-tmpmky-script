@@ -13,3 +13,7 @@ little script for tampermonkey addon which removes closed test submission from p
 8. Change ``YOUR_TIME_SLOT`` constant to your time slot
 9. Press install
 10. You're done
+
+## Demonstration
+
+![](https://david-dewes.de/img/demoA.gif)
