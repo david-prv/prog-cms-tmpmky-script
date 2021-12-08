@@ -10,5 +10,6 @@ little script for tampermonkey addon which removes closed test submission from p
 5. Extract zip-file
 6. Press "Select File" in tampermonkey (you can find it in "File" Section)
 7. Now select the ``.js`` file, you've extracted from the zip-file
-8. Press install
-9. You're done
+8. Change ``YOUR_TIME_SLOT`` constant to your time slot
+9. Press install
+10. You're done
