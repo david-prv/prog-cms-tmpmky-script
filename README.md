@@ -13,9 +13,3 @@ little collection of tampermonkey plugins I've programmed for the prog1 cms
 8. Optional: Change constants if necessary (e.g ``YOUR_TIME_SLOT`` constant to your time slot)
 9. Press install
 10. You're done
-
-## Demonstrations
-### Beautify Prog CMS
-![](https://david-dewes.de/img/demoA.gif)
-### DarkMode for Prog CMS
-soon
