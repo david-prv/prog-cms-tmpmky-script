@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DarkMode Prog CMS
 // @namespace    https://david-dewes.de/
-// @version      0.1
+// @version      0.2
 // @description  dark is always better, change my mind
 // @author       David Dewes
 // @match        https://cms.sic.saarland/prog1_21/*
