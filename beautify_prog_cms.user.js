@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Beautify Prog CMS
 // @namespace    https://david-dewes.de/
-// @version      0.1
+// @version      2.1
 // @description  remove annoying components
 // @author       David Dewes
 // @match        https://cms.sic.saarland/prog1_21/students/view
