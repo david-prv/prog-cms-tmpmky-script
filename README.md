@@ -1,5 +1,5 @@
-# prog-cms-tmpmky-script
-little script for tampermonkey addon which removes closed test submission from personal status page
+# prog-cms-tmpmky-scripts
+little collection of tampermonkey plugins I've programmed for the prog1 cms
 
 ## Installation
 
