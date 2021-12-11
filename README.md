@@ -21,6 +21,9 @@ little collection of tampermonkey plugins I've programmed for the prog1 cms
 
 ## Known Issues
 
+### Beautify Prog CMS
+-/-
+
 ### DarkMode Prog CMS
 1. Timetable does not work correctly
 2. Upcoming events table does not apply new colors yet
