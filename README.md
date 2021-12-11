@@ -18,3 +18,10 @@ little collection of tampermonkey plugins I've programmed for the prog1 cms
 8. Optional: Change constants if necessary (e.g ``YOUR_TIME_SLOT`` constant to your time slot)
 9. Press install
 10. You're done
+
+## Known Issues
+
+### DarkMode Prog CMS
+1. Timetable does not work correctly
+2. Upcoming events table does not apply new colors yet
+3. Opened submissions also do not apply new color scheme yet
