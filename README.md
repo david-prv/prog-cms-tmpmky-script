@@ -29,3 +29,4 @@ little collection of tampermonkey plugins I've programmed for the prog1 cms
 2. Upcoming events table does not apply new colors yet
 3. Opened submissions also do not apply new color scheme yet
 4. Spy is not sticky when applying darkmode in scrolled state
+5. Statistics Graph does not load corretly
