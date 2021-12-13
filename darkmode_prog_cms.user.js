@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DarkMode Prog CMS
 // @namespace    https://david-dewes.de/
-// @version      0.2
+// @version      0.1
 // @description  dark is always better, change my mind
 // @author       David Dewes
 // @match        https://cms.sic.saarland/prog1_21/*
@@ -20,45 +20,53 @@
     /* Add style to certain table rows */
     let tables = document.getElementsByClassName("table table-striped");
     Array.prototype.forEach.call(tables, function(table) {
-        let tbody = table.childNodes[0];
-        let tablerows = tbody.childNodes;
-        let eveness = 0;
-        for(let i = 0; i<tablerows.length; i++) {
-            eveness += 1;
-            let row = tablerows[i];
-            if(eveness % 2 > 0) {
-                let tr = row.childNodes;
-                for(let j = 0; j<tr.length; j++) {
-                    let crow = tr[j];
-                    crow.setAttribute("style", "background-color:#202020!important;")
+        try {
+            let tbody = table.childNodes[0];
+            let tablerows = tbody.childNodes;
+            let eveness = 0;
+            for(let i = 0; i<tablerows.length; i++) {
+                eveness += 1;
+                let row = tablerows[i];
+                if(eveness % 2 > 0) {
+                    let tr = row.childNodes;
+                    for(let j = 0; j<tr.length; j++) {
+                        let crow = tr[j];
+                        crow.setAttribute("style", "background-color:#202020!important;")
+                    }
                 }
-            }
-        };
+            };
+        } catch (e) {
+           console.log("could not find tables");
+        }
     });
 
     /* Add style to certain accordion rows */
     let accordions = document.getElementsByClassName("accordion-group");
     Array.prototype.forEach.call(accordions, function(acc) {
-        let collapse = acc.childNodes[3];
-        let table = collapse.childNodes[1];
-        let tbody = table.childNodes[1];
-        let rows = tbody.childNodes;
-        /* clean up */
-        let clean_rows = [];
-        for(let i=0; i<rows.length; i++) {
-            let row = rows[i];
-            if (row.nodeName == 'TR') clean_rows.push(row);
-        }
-        /* Continue */
-        let eveness = 0;
-        for(let j=0;j<clean_rows.length; j++) {
-            eveness += 1;
-            if(eveness % 2 > 0) {
-                clean_rows[j].childNodes[1].setAttribute("style", "background-color:#202020!important;");
-                clean_rows[j].childNodes[3].setAttribute("style", "background-color:#202020!important;");
-                clean_rows[j].childNodes[5].setAttribute("style", "background-color:#202020!important;");
-                clean_rows[j].childNodes[7].setAttribute("style", "background-color:#202020!important;");
+        try {
+            let collapse = acc.childNodes[3];
+            let table = collapse.childNodes[1];
+            let tbody = table.childNodes[1];
+            let rows = tbody.childNodes;
+            /* clean up */
+            let clean_rows = [];
+            for(let i=0; i<rows.length; i++) {
+                let row = rows[i];
+                if (row.nodeName == 'TR') clean_rows.push(row);
             }
+            /* Continue */
+            let eveness = 0;
+            for(let j=0;j<clean_rows.length; j++) {
+                eveness += 1;
+                if(eveness % 2 > 0) {
+                    clean_rows[j].childNodes[1].setAttribute("style", "background-color:#202020!important;");
+                    clean_rows[j].childNodes[3].setAttribute("style", "background-color:#202020!important;");
+                    clean_rows[j].childNodes[5].setAttribute("style", "background-color:#202020!important;");
+                    clean_rows[j].childNodes[7].setAttribute("style", "background-color:#202020!important;");
+                }
+            }
+        } catch (e) {
+           console.log("could not find accordions");
         }
     });
 
