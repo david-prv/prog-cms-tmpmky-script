@@ -12,10 +12,16 @@
 (function() {
     'use strict';
 
+    const TIMEOUT = (window.location.href.endsWith('/calendar/index') == true) ? 200 : false;
+
     /* Add some global styles */
     let body = document.body;
     body.setAttribute("style", "background-color:#0d1117!important;color:#c9d1d9!important;padding-top:2%;");
-    body.innerHTML += "<style>a:hover {background-color:transparent!important;} .progress {background:none!important;background-color:#c00000!important;} div.accordion-body.in {border-top:1px solid black!important;} div.accordion-body .table th, div.accordion-body .table td {border-bottom:none!important;} .accordion-group {border:1px solid black!important;} .modal-header .close {color:white!important;} .modal-footer {background-color:black!important;} .modal {background-color:black!important;border:1px solid white!important;} table.table-surrounded tr td:first-child, table.table-surrounded tr th:first-child {border-left:none!important;} .bs-docs-sidenav > li > a {border: none!important;} .nav-list>li>a, .nav-list .nav-header {text-shadow:none!important;} .table th, .table td {border-top:1px solid black!important;} .table-bordered {border:none!important;}</style>"
+
+    /* Some timeout is necessary for timetable because of calendar software */
+    setTimeout(function() {
+        body.innerHTML += "<style>.fc-state-highlight {background:initial!important;}a:hover {background-color:transparent!important;} .progress {background:none!important;background-color:#c00000!important;} div.accordion-body.in {border-top:1px solid black!important;} div.accordion-body .table th, div.accordion-body .table td {border-bottom:none!important;} .accordion-group {border:1px solid black!important;} .modal-header .close {color:white!important;} .modal-footer {background-color:black!important;} .modal {background-color:black!important;border:1px solid white!important;} table.table-surrounded tr td:first-child, table.table-surrounded tr th:first-child {border-left:none!important;} .bs-docs-sidenav > li > a {border: none!important;} .nav-list>li>a, .nav-list .nav-header {text-shadow:none!important;} .table th, .table td {border-top:1px solid black!important;} .table-bordered {border:none!important;}</style>";
+    }, TIMEOUT);
 
     /* Add style to certain table rows */
     let tables = document.getElementsByClassName("table table-striped");
