@@ -3,7 +3,7 @@ little collection of tampermonkey plugins I've programmed for the prog1 cms
 
 ## Current Scripts
 
-1. [Beautify Prog CMS (stable)](https://github.com/david-prv/prog-cms-tmpmky-scripts/blob/main/beautify_prog_cms.user.js) - Removes Closed and useless Opened Submissions to prevent unnecessary distractions
+1. [Beautify Prog CMS (stable v2.2)](https://github.com/david-prv/prog-cms-tmpmky-scripts/blob/main/beautify_prog_cms.user.js) - Removes Closed and useless Opened Submissions to prevent unnecessary distractions
 2. [DarkMode Prog CMS (work in progress)](https://github.com/david-prv/prog-cms-tmpmky-scripts/blob/main/darkmode_prog_cms.user.js) - Well, it makes the whole cms page... dark!
 
 ## Installation
