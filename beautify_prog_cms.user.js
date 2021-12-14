@@ -15,8 +15,8 @@
     const MIDTERM_PROBLEMS = {
         "Problem 1": "Inversion",
         "Problem 2": "Fibonacci",
-        "Problem 3": "Init",
-        "Problem 4": "Reverse",
+        "Problem 3": "Reverse",
+        "Problem 4": "Init",
         "Problem 5": "Decimal",
         "Problem 6": "Prime",
         "Problem 7": "Insertionsort",
