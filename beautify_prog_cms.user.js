@@ -12,6 +12,9 @@
 (function() {
 
     const YOUR_TIME_SLOT = "Slot 14:00";
+    const CLOSED_TIME_SLOT = "Closed";
+    const OPEN_TIME_SLOT = "Open";
+    const CATCH_ALL_SLOT = "All Slots";
     const MIDTERM_PROBLEMS = {
         "Problem 1": "Inversion",
         "Problem 2": "Fibonacci",
@@ -26,7 +29,7 @@
         "Problem 11": "Typing/Evaluation Rules"
     };
 
-    /* get clean nodes */
+    /* fetch clean nodes */
     let nodes = document.getElementsByClassName("table-submissions")[0].childNodes[1].childNodes;
     let cleanNodes = [];
     Array.prototype.forEach.call(nodes, function(node) {
@@ -37,11 +40,11 @@
 
     Array.prototype.forEach.call(cleanNodes, function(cnode) {
         /* Remove closed submissions */
-       if (cnode.childNodes[1].innerHTML.indexOf("Closed") !== -1) cnode.setAttribute('style', 'display:none!important;');
+       if (cnode.childNodes[1].innerHTML.indexOf(CLOSED_TIME_SLOT) !== -1) cnode.setAttribute('style', 'display:none!important;');
         /* Remove open submissions that do not belong to you */
-       if (cnode.childNodes[1].innerHTML.indexOf("Open") !== -1 &&
+       if (cnode.childNodes[1].innerHTML.indexOf(OPEN_TIME_SLOT) !== -1 &&
            cnode.childNodes[3].innerHTML.indexOf(YOUR_TIME_SLOT) == -1 &&
-           cnode.childNodes[3].innerHTML.indexOf("All Slots") == -1) cnode.setAttribute('style', 'display:none!important;');
+           cnode.childNodes[3].innerHTML.indexOf(CATCH_ALL_SLOT) == -1) cnode.setAttribute('style', 'display:none!important;');
     });
 
     // MIDTERM WISE21/22 PROBLEMS //
