@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Beautify Prog CMS
 // @namespace    https://david-dewes.de/
-// @version      2.2
+// @version      2.3
 // @description  remove annoying components, add problem types
 // @author       David Dewes
 // @match        https://cms.sic.saarland/prog1_21/students/view
@@ -39,7 +39,9 @@
         /* Remove closed submissions */
        if (cnode.childNodes[1].innerHTML.indexOf("Closed") !== -1) cnode.setAttribute('style', 'display:none!important;');
         /* Remove open submissions that do not belong to you */
-       if (cnode.childNodes[1].innerHTML.indexOf("Open") !== -1 && cnode.childNodes[3].innerHTML.indexOf(YOUR_TIME_SLOT) == -1) cnode.setAttribute('style', 'display:none!important;');
+       if (cnode.childNodes[1].innerHTML.indexOf("Open") !== -1 &&
+           cnode.childNodes[3].innerHTML.indexOf(YOUR_TIME_SLOT) == -1 &&
+           cnode.childNodes[3].innerHTML.indexOf("All Slots") == -1) cnode.setAttribute('style', 'display:none!important;');
     });
 
     // MIDTERM WISE21/22 PROBLEMS //
