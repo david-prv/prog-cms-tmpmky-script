@@ -1,10 +1,11 @@
-# prog-cms-tmpmky-scripts (deprecated)
+# prog-cms-tmpmky-scripts
 little collection of tampermonkey plugins I've programmed for the prog1 cms
 
 ## Current Scripts
 
-1. [Beautify Prog CMS (deprecated, stable v2.3)](https://github.com/david-prv/prog-cms-tmpmky-scripts/blob/main/beautify_prog_cms.user.js) - Removes Closed and useless Opened Submissions to prevent unnecessary distractions (already partly adjusted from prog1-team)
-2. [DarkMode Prog CMS (unfinished, development stopped)](https://github.com/david-prv/prog-cms-tmpmky-scripts/blob/main/darkmode_prog_cms.user.js) - Well, it makes the whole cms page... dark!
+1. [Beautify Prog CMS (v2.4)](https://github.com/david-prv/prog-cms-tmpmky-scripts/blob/main/beautify_prog_cms.user.js) - Removes Closed Submissions
+2. [DarkMode Prog CMS (unfinished, development stopped)](https://github.com/david-prv/prog-cms-tmpmky-scripts/blob/main/darkmode_prog_cms.user.js) - Well, it makes the whole cms page... dark!  
+(Since the development on this has stopped, I recommend [this](https://github.com/ColinTimBarndt/stylus_cms-sic-saarland-theme) stylus theme, made by [Colin Barndt](https://github.com/ColinTimBarndt))
 
 ## Installation
 
@@ -15,9 +16,8 @@ little collection of tampermonkey plugins I've programmed for the prog1 cms
 5. Extract zip-file
 6. Press "Select File" in tampermonkey (you can find it in "File" Section)
 7. Now select the ``.js`` file, you've extracted from the zip-file and which you wish to install
-8. Optional: Change constants if necessary (e.g ``YOUR_TIME_SLOT`` constant to your time slot)
-9. Press install
-10. You're done
+8. Press install
+9. You're done
 
 ## Known Issues
 
