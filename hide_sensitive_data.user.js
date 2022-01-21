@@ -11,7 +11,7 @@
 
 (function() {
 
-    let css = ".blurred { color: transparent; text-shadow: 0 0 5px rgb(154 154 154 / 50%); -webkit-transition: text-shadow 0.1s; -moz-transition: text-shadow 0.1s; } .blurred:hover {color: transparent; text-shadow: 0 0 0 rgba(255,255,255,1); -webkit-transition: text-shadow 0.1s; -moz-transition: text-shadow 0.1s;} ",
+    let css = ".blurred { color: transparent; text-shadow: 0 0 5px rgb(154 154 154 / 50%); -webkit-transition: text-shadow 0s; -moz-transition: text-shadow 0s; } .blurred:hover {color: transparent; text-shadow: 0 0 0 rgba(255,255,255,1); -webkit-transition: text-shadow 0.1s; -moz-transition: text-shadow 0.1s;} ",
         styleObj = document.createElement("style"),
         head = document.head || document.getElementsByTagName('head')[0];
     head.appendChild(styleObj);
