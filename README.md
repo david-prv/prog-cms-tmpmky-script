@@ -1,5 +1,5 @@
 # prog-cms-tmpmky-scripts
-little collection of tampermonkey plugins I've programmed for the prog1 cms
+little collection of tampermonkey plugins I've programmed for the prog1 and sic cms
 
 ## Current Scripts
 
