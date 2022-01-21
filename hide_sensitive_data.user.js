@@ -2,10 +2,10 @@
 // @name         Hide sensitive data
 // @namespace    https://david-dewes.de/
 // @version      0.1
-// @description  hide sensitive data in SIC cms
+// @description  hide sensible data in SIC cms
 // @author       David Dewes
-// @match        https://cms.sic.saarland/prog1_21/students/view
-// @icon         https://www.google.com/s2/favicons?domain=sic.saarland
+// @match        https://cms.sic.saarland/*/students/view
+// @icon         none
 // @grant        none
 // ==/UserScript==
 
