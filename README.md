@@ -5,8 +5,9 @@ little collection of tampermonkey plugins I've programmed for various websites
 
 1. [Beautify Prog CMS (v2.4)](https://github.com/david-prv/prog-cms-tmpmky-scripts/blob/main/beautify_prog_cms.user.js) - Removes Closed Submissions
 2. [Hide Sensitive Data (v0.1)](https://github.com/david-prv/prog-cms-tmpmky-scripts/blob/main/hide_sensitive_data.user.js) - Hide your sensitive data in all SIC-related Course-Management-Systems
-3. [DarkMode Prog CMS (unfinished, development stopped)](https://github.com/david-prv/prog-cms-tmpmky-scripts/blob/main/darkmode_prog_cms.user.js) - Well, it makes the whole cms page... dark!  
+3. [DarkMode Prog CMS (never finished)](https://github.com/david-prv/prog-cms-tmpmky-scripts/blob/main/darkmode_prog_cms.user.js) - Well, it makes the whole cms page... dark!  
 (Since the development on this has stopped, I recommend [this](https://github.com/ColinTimBarndt/stylus_cms-sic-saarland-theme) stylus theme, made by [Colin Barndt](https://github.com/ColinTimBarndt))
+4. [Pixle AutoHide Cookie (v0.1)](https://github.com/david-prv/tampermonkey-scripts/blob/main/pixle_hide_cookie.user.js) - I hate Angular an some of its immature features, which produce persistent graphical bugs. This plugin is a workaround mitigation of the cookie opt-in of pixle.gg.
 
 ## Installation
 
