@@ -1,5 +1,5 @@
-# prog-cms-tmpmky-scripts
-little collection of tampermonkey plugins I've programmed for the prog1 and sic cms
+# tampermonkey-scripts
+little collection of tampermonkey plugins I've programmed for various websites
 
 ## Current Scripts
 
@@ -20,17 +20,6 @@ little collection of tampermonkey plugins I've programmed for the prog1 and sic 
 8. Press install
 9. You're done
 
-## Known Issues
+## Disclaimer
 
-### Beautify Prog CMS
--/-
-
-### Hide Sensitive Data
--/-
-
-### DarkMode Prog CMS (not longer supported)
-1. ~~Timetable does not work correctly~~ (fixed)
-2. Upcoming events table does not apply new colors yet
-3. Opened submissions also do not apply new color scheme yet
-4. Spy is not sticky when applying darkmode in scrolled state
-5. Statistics Graph does not load corretly
+There are some known issues with these plugins. But since I don't program them for a public audience, I don't focus on user-friendly usability. Please not that, if you plan to re-factor or use some of these plugins. Thanks.
