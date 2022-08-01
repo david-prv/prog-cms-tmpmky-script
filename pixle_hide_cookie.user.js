@@ -15,9 +15,7 @@
      // inject css
     let css = ".main-cookie-alert { opacity: 0 !important; }",
         styleObj = document.createElement("style"),
-        head = document.head || document.getElementsByTagName('head')[0],
-        matriculation,
-        fullname;
+        head = document.head || document.getElementsByTagName('head')[0];
     head.appendChild(styleObj);
     styleObj.type = 'text/css';
     if (styleObj.styleSheet){ styleObj.styleSheet.cssText = css; } else { styleObj.appendChild(document.createTextNode(css)); }
