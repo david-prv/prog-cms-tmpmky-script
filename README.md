@@ -25,4 +25,4 @@ little collection of tampermonkey plugins I've programmed for various websites
 
 ## Disclaimer
 
-There are some known issues with these plugins. But since I don't program them for a public audience, I don't focus on user-friendly usability. Please not that, if you plan to re-factor or use some of these plugins. Thanks.
+There are some known issues with these plugins. But since I don't program them for a public audience, I don't focus on user-friendly usability. Please note that, if you plan to re-factor or use some of these plugins. Thanks.
